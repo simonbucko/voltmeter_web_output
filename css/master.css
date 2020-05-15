@@ -1,0 +1,427 @@
+/*
+Main colors:
+Tangerine: #E37222
+Teal: #07889B
+Powder: #66B9BF
+Tan: #EEAA7B
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  background: #E9E9E9;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display: none;
+}
+
+/*menu*/
+header{
+  background: #66B9BF;
+  height: 100px;
+  position: sticky;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-logo{
+  height: 80px;
+  margin: 10px;
+  float: left;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: left;
+  border-left: 1px solid #66B9BF;
+}
+
+nav ul li a{
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 20px;
+  background: #07889B;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #E9E9E9;
+  transition: 0.5s;
+}
+
+nav ul li a:hover{
+  background: #EEAA7B;
+  transition: 0.5s;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #E9E9E9;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+.container{
+  padding: 5px 10px;
+    width: 54px;
+    cursor: pointer;
+}
+
+header .mobilmenu .wrapper{
+
+    width: 100%;
+    padding: 0;
+    background: #66B9BF;
+    margin-top: 14.5px;
+  }
+
+.mobilmenu{
+  display: none;
+}
+.navLinks{
+  display: inline-block;
+  width: 293px;
+}
+/*end of menu*/
+
+/*main of website*/
+main{
+  height: 70%;
+  width: 100%;
+}
+
+#about-left-col{
+  float:left;
+  width:50vh;
+  height:50vh;
+}
+
+#about-left-col img{
+  width:100%;
+}
+
+#about-right-col{
+  height:auto;
+  background-color: #EEAA7B;
+}
+
+#about-right-col h1{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#clear{
+  clear:both;
+}
+
+/*table*/
+table{
+  margin: 43px auto 0px;
+}
+#tableHeader{
+  background-color: #66B9BF;
+  color: white;
+}
+
+table,th,td{
+  border: 1px solid black;
+}
+
+td{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 35px;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+i.fa-trash{
+  color: #ff0b0bba;
+}
+
+i.fa-trash:hover{
+  transform: scale(1.2,1.2);
+}
+
+i.fa-chart-line,i.fa-clock{
+  font-size: 18px;
+  color: #07889b;
+}
+
+i.fa-chart-line:hover,i.fa-clock:hover{
+  transform: scale(1.2,1.2);
+}
+
+.rowFlex{
+  display: flex;
+  justify-content: space-evenly;
+}
+/*end of table*/
+form{
+  margin: auto;
+  text-align: center;
+}
+
+#stickyWrapper{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #07889B;
+
+}
+body div{
+  position: relative;
+}
+.showLines{
+  position: absolute;
+}
+
+#parallax1{
+  width: 100%;
+  height: 114%;
+  background-image: url("../images/voltmeter_basic.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 66%;
+  background-size: 100%;
+}
+#parallax2{
+  width: 100%;
+  height: 160%;
+  background-image: url("../images/voltage-meter-inside.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#parallax3{
+  width: 100%;
+  height: 160%;
+  background-image: url("../images/voltage-meter.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#parallaxText1{
+  width: 100%;
+  text-align: center;
+  background-color: #66B9BF;
+  height: 100px;
+  color: #E9E9E9;
+  font-size: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+#parallaxText1 div{
+  font-size: 40px;
+  padding-top: 25px;
+
+}*/
+#parallaxText2{
+  width: 100%;
+  text-align: center;
+  background-color: #66B9BF;
+  height: 100px;
+  color: #E9E9E9;
+  font-size: 21px; 
+  display: flex;
+  align-items: center;
+}
+footer{
+  width: 100%;
+  background-color: #66B9BF;
+  font-size: 20px;
+  
+}
+footer div{
+  margin: auto;
+  text-align: center;
+  color: #E9E9E9;
+  padding: 5px 0 0;
+  position: unset;
+}
+#footerNavSchools{
+  background-color: #66B9BF;
+  text-align: center;
+  height: 60px;
+  padding: 0;
+  width: 195px;
+  margin: auto;
+}
+#footerNavSchools a img{
+  height: 50px;
+  margin: 0 10px;
+}
+#footerNavSchools img{
+  height: 50px;
+  margin: 0 10px;
+}
+.wrapperGraph{
+  width: 80%;
+  margin: 15px auto;
+}
+.showAmpers,.showVoltage{
+  opacity: 0;
+  display: inline-block;
+  width: 90px;
+  padding: 0;
+}
+.showAmpers:hover,.showVoltage:hover{
+  opacity: 0;
+  
+}
+
+.wrapperGraph div{
+  width: 205px;
+  
+  position: absolute;
+  right: 39%;
+  top: 39px;
+}
+#errorMsg{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+@media screen and (max-width: 767px){
+
+.school-logo {
+    height: 60px;
+    margin: 20px 10px;
+    float: left;
+}
+
+
+}
+*/
+
+
+/*mobile*/
+@media screen and (max-width: 767px){
+
+.mobilmenu{
+  display: block;
+  width: 54px;
+}  
+
+.navLinks{
+  display: none;
+}
+
+header .wrapper{
+
+    width: 100%;
+    padding: 0;
+    background-color: #001854;
+}
+
+header nav ul{
+    display: block;
+    overflow: hidden;
+    background: #07889b;
+    height: 0;
+}
+
+header nav ul.open{
+    height: auto;
+}
+
+header nav ul li{
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 75px;
+    border-bottom: 1px solid #07889b;
+    border-left: 1px solid #07889b;
+    border-right: 1px solid #07889b;
+  }
+
+header nav ul li a{
+    color: #E9E9E9;
+    text-decoration: none;
+    padding: 0px 12px;
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    width: 100%;
+    height: 75px;
+}
+
+div.navLinks{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+    right: 0px;
+    width: 100%;
+    
+}
+.navLinks nav{
+  width: 100%;
+}
+.school-logo{
+  transform: scale(0.8, 0.8);
+  margin: 10px 0px;
+}
+td{
+  display: inline-block;
+  width: 129px;
+  height: 44px;
+}
+
+
+}
+
+@media screen and (max-width: 520px){
+
+td{
+
+  width: 75px;
+  height: 58px;
+}
+
+
+}
